@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+  </head>
+  <body>
+    <div  class="world-map" >
+      <div id="listcontainer" class="listcontainer">
+      </div>
+      <div class="info" id="info">
+        <div><span id="warehousesCount"></span>+ Warehouses</div>
+        <div><span id="vehiclesCount"></span>+ Vehicles</div>
+        <div><span id="distributorsCount"></span>+ Distributors</div>
+      </div>
+      <svg width="900" height="600"></svg>
+    </div>
+    <div class="car-info" id="carInfo">
+      <div class="images">
+        <p>make1</p>
+        <img src="images/Picture1.png" alt="">
+        <p>QTY: <span id="make1"></span></p>
+      </div>
+      <div class="images">
+        <p>make2</p>
+        <img src="images/Picture2.png" alt="">
+        <p>QTY: <span id="make2"></span></p>
+      </div>
+      <div class="images">
+        <p>make3</p>
+        <img src="images/Picture3.png" alt="">
+        <p>QTY: <span id="make3"></span></p>
+      </div>
+      <div class="images">
+        <p>make4</p>
+        <img src="images/Picture4.png" alt="">
+        <p>QTY: <span id="make4"></span></p>
+      </div>
+      <div class="images">
+        <p>make5</p>
+        <img src="images/Picture5.png" alt="">
+        <p>QTY: <span id="make5"></span></p>
+      </div>
+    </div>
+    <script src="/js/all.min.js"></script>
+    <script src="/js/bundle.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

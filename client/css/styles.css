@@ -1,0 +1,234 @@
+body {
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+.world-map{
+  position: absolute;
+  top: 2%;
+  left: 10%;
+}
+
+.info {
+  opacity: 0;
+  transition: .2s;
+  width: 130px;
+  background: rgb(247, 247, 247);
+  line-height: 22px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+  border-radius: 10px;
+  position: absolute;
+  transform: translate(10px,10px);
+}
+.sphere:hover {
+  background-color: red;
+}
+.sphere {
+  fill: transparent;
+}
+
+.country {
+  fill: #ccc;
+  stroke: black;
+  stroke-width: 0.05px;
+  transform: translate(10px,10px);
+}
+/* .green{
+  color: #009b00;
+}
+.purple{
+  fill: #b901b9;
+}
+.red{
+  fill:#ff0000;
+}
+.yellow{
+  fill: yellow;
+}
+.cyan{
+  fill: #00d1d1;
+} */
+/* .country:hover {
+  fill: red;
+} */
+.active{
+  transition: .3s;
+}
+.green{
+  color: #23c723;
+}
+.active.green1{
+  fill: #5dff5d;
+}
+.active.green2{
+  fill: #009b00;
+}
+.active.green3{
+  fill: #007700;
+}
+.active.green4{
+  fill: #015701;
+}
+.active.green5{
+  fill: #277e27;
+}
+
+.purple{
+  color: #b901b9;
+}
+.active.purple1{
+  fill: #b901b9;
+}
+.active.purple2{
+  fill: #9c019c;
+}
+.active.purple3{
+  fill: #850185;
+}
+.active.purple4{
+  fill: #5c015c;
+}
+.active.purple5{
+  fill: #742074;
+}
+
+
+.red{
+  color:red;
+}
+.active.red1{
+  fill:#ff0000;
+}
+.active.red2{
+  fill:#ce0000;
+}
+.active.red3{
+  fill:#b30000;
+}
+.active.red4{
+  fill:#740101;
+}
+.active.red5{
+  fill:#ff5151;
+}
+
+.yellow{
+  color:rgb(216, 216, 22);
+}
+.active.yellow1{
+  fill: yellow;
+}
+.active.yellow2{
+  fill: #ffff28;
+}
+.active.yellow3{
+  fill: #c0c000;
+}
+.active.yellow4{
+  fill: #8d8d00;
+}
+.active.yellow5{
+  fill: #f4ff57;
+}
+.active.yellow6{
+  fill: #a9b31d;
+}
+
+.cyan{
+  color:#26acac;
+}
+.active.cyan1{
+  fill: #6cffff;
+}
+.active.cyan2{
+  fill: #00d1d1;
+}
+.active.cyan3{
+  fill: #00b4b4;
+}
+.active.cyan4{
+  fill: #009696;
+}
+.active.cyan5{
+  fill: #006d6d;
+}
+.listcontainer{
+  top: 50px;
+  position: absolute;
+  background-color: #EEE;
+  border-radius:10px ;
+  display: none;
+}
+.listcontainer >div{
+  padding: 4px 0 0;
+  width: 165px;
+  position: relative;
+  overflow: hidden;
+  height: 92px;
+  padding-bottom: 15px;
+}
+.listcontainer .show {
+  height: 100%;
+}
+.listcontainer .show .but .fa-angle-down{
+  transform: rotate(180deg);
+}
+.listcontainer h2{
+  padding: 5px 10px 0;
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 5px 0 ;
+  border-bottom: solid #ccc 1px;
+  display: block;
+}
+.listcontainer ul{
+  list-style: auto;
+  padding-left: 40px;
+  line-height: 22px;
+  margin: 5px 0;
+}
+.listcontainer ul li{
+  font-size: 15px;
+}
+.listcontainer .but{
+  width: 100%;
+  text-align: center;
+  border: solid 0px black;
+  outline: none;
+  background: transparent;
+  background: #f1f1f1;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+}
+/* car info */
+
+.car-info{
+  opacity: .7;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 460px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  transition: .3s;
+}
+.car-info .images{
+  width: 60px;
+  margin: 0 40px 15px;
+}
+.car-info .images img{
+  width: 100%;
+}
+.car-info .images p{
+  font-size: 17px;
+  margin: 0px auto;
+  text-align: center;
+  font-weight: 500;
+}
